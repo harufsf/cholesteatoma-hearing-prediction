@@ -1,0 +1,4 @@
+per_patient_csv: path/to/per_patient_results.csv
+base_csv: path/to/base_csv
+gated_oof_csv: path/to/GATED_oof_predictions.csv
+out: path/to/case_list.csv

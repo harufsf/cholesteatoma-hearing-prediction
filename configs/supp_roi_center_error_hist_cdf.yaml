@@ -1,0 +1,4 @@
+csv: patho/to/pred_center_errors.csv
+out_dir: patho/to/figures
+dpi: 300
+bins: 30

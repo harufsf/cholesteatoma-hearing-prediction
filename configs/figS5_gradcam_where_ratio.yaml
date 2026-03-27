@@ -1,0 +1,2 @@
+input_csv: path/to/gradcam_where_ratio.csv
+out_dir: results/figures

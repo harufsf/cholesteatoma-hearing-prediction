@@ -1,0 +1,70 @@
+# Suggested location in repo:
+#   repo_chole/configs/full_pipeline_repro_oldrun.yaml
+#
+# Purpose:
+#   Reproduce the historical production-like training settings as closely as possible
+#   from the public modular pipeline.
+#
+# Notes:
+# - Keep paths editable by the user.
+# - This file is intended to be passed to scripts/run_full_pipeline.py via --config.
+
+in_csv: path/to/in_csv
+out_csv: path/to/out_csv
+roi_dir: path/to/roi/dir
+experiment_name: name/of/experiment
+sizes: '25,40,60'
+
+target_cols:
+  - post_PTA_0.5k_A
+  - post_PTA_1k_A
+  - post_PTA_2k_A
+  - post_PTA_3k_A
+  - post_PTA_0.5k_B
+  - post_PTA_1k_B
+  - post_PTA_2k_B
+  - post_PTA_3k_B
+
+run_tabular: true
+run_residual: true
+run_gated: true
+
+common:
+  id_col: id
+  fold_col: fold
+  side_col: side
+  val_size: 0.2
+  seed: 0
+  num_workers: 0
+  no_amp: false
+
+tabular:
+  epochs: 300
+  batch_size: 32
+  lr: 0.001
+
+residual:
+  roi_pool: attn
+  out_dhw: '160,192,192'
+  tab_epochs: 300
+  tab_batch: 32
+  tab_lr: 0.001
+  roi_epochs: 150
+  roi_batch: 6
+  roi_lr: 0.001
+  delta_l2: 0.0
+  start_fold: 1
+
+gated:
+  roi_pool: concat
+  out_dhw: '96,96,96'
+  tab_epochs: 200
+  tab_batch: 32
+  tab_lr: 0.001
+  roi_epochs: 150
+  roi_batch: 6
+  roi_lr: 0.0001
+  gate_use_ytab: false
+  lambda_gate_l1: 0.001
+  lambda_delta_l2: 0.0001
+  start_fold: 1

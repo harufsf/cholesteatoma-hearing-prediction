@@ -1,0 +1,15 @@
+python: python
+gradcam_py: make_gradcam_for_case_list_fixedfold_v6_layersplit_patched_masknorm_autoslice_fixed_v6_foldfix.py
+panel_py: make_resid_gradcam_figure_panel.py
+case_list_csv: path/to/resid_gradcam_selection/case_list_resid_vs_tab.csv
+manifest_json: path/to/selection_manifest.json
+base_csv: path/to/df_fixed_with_cropped_roi.csv
+per_patient_csv: path/to/per_patient_results.csv
+exp_root: path/to/exp_root
+roi_col: path/to/roi_col
+gradcam_out_dir: path/to/gradcam_out_dir
+panel_out_prefix: path/to/panel_out_prefix
+cols: 4
+anonymize_panel: true
+patient_prefix: path/to/patient_prefix
+hide_panel_title: false

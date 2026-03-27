@@ -1,0 +1,13 @@
+csv_path: path/to/csv
+id_col: id
+fold_col: fold
+target_cols:
+  - post_PTA_0.5k_A
+  - post_PTA_1k_A
+  - post_PTA_2k_A
+  - post_PTA_3k_A
+  - post_PTA_0.5k_B
+  - post_PTA_1k_B
+  - post_PTA_2k_B
+  - post_PTA_3k_B
+out_prefix: results/TAB

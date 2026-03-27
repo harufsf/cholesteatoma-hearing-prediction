@@ -1,0 +1,6 @@
+
+in_csv: path/to/in_csv
+out_csv: path/to/out_csv
+roi_dir: path/to/roi_dir
+experiment_name: path/to/experiment_name
+sizes: '25,40,60'

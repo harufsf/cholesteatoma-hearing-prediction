@@ -1,0 +1,3 @@
+case_list_csv: path/to/case_list_resid_vs_tab.csv
+manifest_json: path/to/selection_manifest.json
+out_dir: results/figures

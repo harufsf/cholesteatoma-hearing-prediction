@@ -1,0 +1,2 @@
+per_patient_csv: path/to/per_patient_results.csv
+out_dir: results/figures

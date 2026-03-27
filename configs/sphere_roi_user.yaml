@@ -1,0 +1,10 @@
+roi_dir: path/to/roi_dir
+dicom_root: null
+sizes: '25,40,60'
+out_shape: '64,64,64'
+default_iso_spacing: 0.5
+fill_hu: -1000.0
+qa: true
+qa_dir: path/to/qa_dir
+overwrite: true
+recursive: true

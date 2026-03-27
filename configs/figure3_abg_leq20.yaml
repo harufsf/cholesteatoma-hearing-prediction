@@ -1,0 +1,5 @@
+per_patient_results: path/to/per_patient_results.csv
+out_dir: path/to/paper_figs
+abg_thr: 20.0
+chosen_t: 0.5
+dpi: 300

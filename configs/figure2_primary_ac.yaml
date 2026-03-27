@@ -1,0 +1,3 @@
+per_patient_results: path/to/per_patient_results.csv
+out_dir: paper_figs
+dpi: 300

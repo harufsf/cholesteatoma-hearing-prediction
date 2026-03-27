@@ -1,0 +1,5 @@
+case_list_csv: path/to/case_list.csv
+base_csv: path/to/base_csv.csv
+exp_root: path/to/exp_root
+cam_root: path/to/cam_root
+roi_col: path/to/roi_col

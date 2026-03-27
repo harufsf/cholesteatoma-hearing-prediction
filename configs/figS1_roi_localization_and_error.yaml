@@ -1,0 +1,5 @@
+click_only_png: path/to/CLICK_example.png
+click_pred_png: path/to/BOTH_example.png
+worst_case_png: path/to/worst_case.png
+csv: path/to/pred_center_errors.csv
+out_dir: results/figures

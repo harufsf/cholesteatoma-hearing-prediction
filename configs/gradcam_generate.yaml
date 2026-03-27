@@ -1,0 +1,6 @@
+case_list_csv: path/to/case_list.csv 
+base_csv: path/to/base_csv.csv 
+per_patient_csv: path/to/per_pat ient_results.csv 
+exp_root: path/to/exp_root 
+roi_col: path/to/roi_col
+out_dir: path/to/out_dir 

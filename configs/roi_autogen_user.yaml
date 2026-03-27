@@ -1,0 +1,23 @@
+
+root: .
+gt_csv: path/to/gt_csv
+dicom_root: path/to/dicom_root
+point_json_dir: path/to/point_json_dir
+out_dir: path/to/output_dir
+epochs: 80
+lr: 5e-4
+anchor_method: bbox_frac
+anchor_x_frac: 0.70
+anterior_mask_y_mm: 30
+anterior_mask_alpha: 0.15
+anterior_mask_ramp_mm: 10
+anterior_mask_mode: attenuate
+metal_thr: 3000
+metal_alpha: 0.80
+metal_attenuate_always: true
+guard_top1_top2_lt: 1.05
+guard_entropy_gt: 0.62
+best_epoch_metric: dev_p90
+best_epoch_patience: 0
+seed: 1337
+deterministic: true

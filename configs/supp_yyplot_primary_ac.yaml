@@ -1,0 +1,4 @@
+per_patient_csv: patho/to/per_patient_results.csv
+out_dir: patho/to/figures
+suffix: ''
+dpi: 200

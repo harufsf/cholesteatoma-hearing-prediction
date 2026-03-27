@@ -1,0 +1,3 @@
+from .gradcam_case_selection import main as make_gradcam_case_selection_main
+from .gradcam_generate import main as make_gradcam_generate_main
+from .gradcam_where_ratio import main as compute_gradcam_where_ratio_main
